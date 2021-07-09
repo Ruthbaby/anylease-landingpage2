@@ -66,11 +66,20 @@ header .navbar .signup a:hover{
 }
 .background{
     width: 100vw;
+    display: inline;
+     
 }
-.background img{
+.background img:first-of-type{
     width: 100%;
-
+    z-index: -8;
 }
+.background img:last-of-type{
+    position: absolute;
+    bottom: 13.5rem;
+    left: 4rem;
+    width: 6rem;
+}
+
 .background h2{
     position: absolute;
     margin-top: 2rem;
@@ -80,7 +89,9 @@ header .navbar .signup a:hover{
     margin-top: 10rem;
     margin-left: 4rem;
     line-height: 5rem;
+    
 }
+
 .do-text{
     text-align: center;
     margin-top: 5rem;
@@ -90,12 +101,14 @@ header .navbar .signup a:hover{
     font-weight: 600;
     color: #3a3a3a;
     font-size: 3.5rem;
+    
 }
 .do-text p{
     color: #6b6363;
     font-size: 1.5rem; 
     margin-top: 1.5rem;
 }
+
 .cards{
     display: flex;
     flex-direction: row;
@@ -109,7 +122,7 @@ header .navbar .signup a:hover{
 .cards .card1{
     background: #fdfdfd;
     border: 1px solid white;
-    box-shadow: 0 0 10px 1px #6b6363;
+    box-shadow: 0 0 7px 0 #979797;
     width: 22rem;
     height: 30rem;
     display: flex;
@@ -157,7 +170,7 @@ header .navbar .signup a:hover{
     color: #3a3a3a;
     font-size: 2.5rem;
     font-weight: 600;
-    margin-left: -13rem;
+    margin-left: -12.8rem;
 }
 .download .download-text p{
     margin-top: 3rem;
@@ -232,6 +245,13 @@ header .navbar .signup a:hover{
     font-size: 1.5rem;
     font-weight: 400;
     padding: 2rem;
+}
+.newsletter .form input[type="email"]{
+    font-size:1.5rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3a3a3a;
+    padding-left: 1rem;
 }
 .newsletter .form .btn:hover{
     font-size: 2.3rem;
